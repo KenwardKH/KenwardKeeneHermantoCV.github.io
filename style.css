@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-size: large;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: lightgray;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  padding: 8px 16px 8px 16px;
+  background-image: linear-gradient(to right, lightgray, brown);
+  align-items: center;
+  z-index: 2;
+}
+.navbar ul {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  column-gap: 10px;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+}
+.konten {
+  justify-content: flex-end;
+  padding-right: 170px;
+}
+.right {
+  justify-content: end;
+}
+.icon {
+  margin: 0;
+}
+.clock {
+  background-color: bisque;
+  color: black;
+  font-size: 15px;
+  border-radius: 50px;
+  width: 100px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+.navbar .item:nth-child(-n + 2):hover {
+  color: blue;
+}
+
+/* Dark Mode */
+.background-dark {
+  background-color: #231816;
+  color: white;
+}
+.navbar .darkmode {
+  color: white;
+}
+.borderdark {
+  border: white;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 25px;
+}
+.image {
+  width: 250px;
+  border-radius: 50%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  padding-left: 10px;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+
+/* About Me */
+.about {
+  padding-top: 25px;
+  text-align: center;
+}
+.about h2 {
+  padding-bottom: 10px;
+}
+.about-text {
+  width: 65%;
+  text-align: justify;
+  margin: auto;
+}
+.identity {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px 0 0 0;
+}
+.identitas {
+  text-align: left;
+}
+.badge {
+  margin-right: 25px;
+}
+
+/* Project */
+.project {
+  padding-top: 25px;
+}
+.project h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  margin: auto;
+}
+.project-text {
+  text-align: center;
+}
+
+/* Slide Show */
+.project a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+  z-index: 1;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.caption {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+  background-color: rgba(39, 17, 90, 0.8);
+  width: fit-content;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .caption {
+    font-size: 11px;
+  }
+}
+
+/* Contact */
+.contact {
+  padding-top: 25px;
+}
+.contact h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.contact-list {
+  display: flex;
+  justify-content: center;
+}
+.contact ul {
+  border: solid black 5px;
+  border-radius: 50px;
+  list-style: none;
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 24px;
+  margin: 0;
+}
+.contact li {
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+@media (max-width: 752px){
+  body {
+    font-size: medium;
+  }
+  .contact svg {
+    width: 14px;
+    height: 14px;
+  }
+  .navbar svg {
+    width: 14px;
+    height: 14px;
+  }
+  .contact li {
+    font-size: medium;
+  }
+  .profile .text {
+    text-align: center;
+  }
+}
+@media(max-width: 650px){
+  .navbar li {
+    font-size: small;
+  }
+  .navbar .right ul {
+    flex-wrap: wrap;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+  }
+}
