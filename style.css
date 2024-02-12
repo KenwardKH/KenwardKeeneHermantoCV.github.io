@@ -230,6 +230,9 @@ h3 {
   display: flex;
   justify-content: center;
 }
+.contact-list a {
+  text-decoration: none;
+}
 .contact ul {
   border: solid black 5px;
   border-radius: 50px;
@@ -253,7 +256,7 @@ h3 {
   padding: 40px;
 }
 
-@media (max-width: 752px){
+@media (max-width: 752px) {
   body {
     font-size: medium;
   }
@@ -271,8 +274,13 @@ h3 {
   .profile .text {
     text-align: center;
   }
+  .identitas {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+  }
 }
-@media(max-width: 650px){
+@media (max-width: 650px) {
   .navbar li {
     font-size: small;
   }
